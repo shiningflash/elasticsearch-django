@@ -11,7 +11,7 @@ Elasticsearch is a distributed, free and open search and analytics engine for al
 
 **Django** is a Python-based free and open-source web framework.
 
-# Pre-requisite
+# Pre-requisite & Guidelines
 
 ### 1.1 | download and install elasticsearch
 
@@ -94,8 +94,6 @@ $ pip3 install Django
 
 To verify django installation, use `$ django-admin –version`.
 
-Alright! Now, you're all set.
-
 ### 1.3 | create and set-up django application
 
 ```
@@ -113,10 +111,36 @@ I hope you're familiar with this command.
 
 Now, your django application is also up and running. And you're fully ready, yayy!!
 
+### 1.4 | install supporting libraries
+
+All required libraries are listed in `requirements.txt` file. To install them together, `$ pip3 install -r requirements.txt`. Then, add them in the `settings.py` > INSTALLED_APP (`rest_framework`, `django_elasticsearch_dsl`, `django_elasticsearch_dsl_drf`). Also, add this below `INSTALLED_APP`,
+```
+ELASTICSEARCH_DSL = {
+    'default': {
+        'host': 'localhost:9200'
+    }
+}
+```
+
+# Run Project
+
+1. Firstly, Create a virtualenv and activate that using `$ virtualenv venv` and `$ source venv/bin/activate`.
+2. Then, install all necessary packages using `$ pip3 install -r requirements.txt`.
+3. After that, migrate models using `$ python3 manage.py makemigrations migrate`.
+4. Create index using `$ python3 manage.py search_index --rebuild`. <br>
+To check the index mapping, `$ localhost:9200/<PUBLISHER_INDEX_NAME>`. (Note: In our case, PUBLISHER_INDEX is `elastic_demo`)
+5. Finally, run the django project using `$ python3 manage.py runserver`.
+
+Yayyy! You're all done. Now open your browser, search and enjoy elasticsearch...
+
+Some example:
+1. [http://localhost:8000/search/?search=club](http://localhost:8000/search/?search=club)
+2. [http://localhost:8000/search/?color__contains=red](http://localhost:8000/search/?color__contains=red)
+3. [http://localhost:8000/search/?info__contains=sister](http://localhost:8000/search/?info__contains=sister)
+
+Congratulations... 🎉🎉
+
 ---
-
-# Work In Progress ...
-
 
 ### Disclaimer
 
