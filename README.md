@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://cdn-media-1.freecodecamp.org/images/1*ojvTsI-Asv1IIjdm61RzKw.jpeg" width="400" title="elastic-search-django">
   <h1> ElasticSearch with Django </h1>
-<br></div>
+</div>
 
 Sample django project using elastic search. This is quite simple but more detailed. I hope it will be super helpful for you if you are a beginner at elastic search.
 
@@ -11,7 +11,7 @@ Elasticsearch is a distributed, free and open search and analytics engine for al
 
 **Django** is a Python-based free and open-source web framework.
 
-## 1 | Pre-requisite
+# Pre-requisite
 
 ### 1.1 | download and install elasticsearch
 
@@ -30,7 +30,7 @@ OpenJDK Runtime Environment (build 11.0.11+9-Ubuntu-0ubuntu2.18.04)
 OpenJDK 64-Bit Server VM (build 11.0.11+9-Ubuntu-0ubuntu2.18.04, mixed mode, sharing)
 ```
 
-After getting java installed, [download[(https://www.elastic.co/downloads/elasticsearch) **elasticsearch** [from here](https://www.elastic.co/downloads/elasticsearch).
+After getting java installed, [download](https://www.elastic.co/downloads/elasticsearch) **elasticsearch** [from here](https://www.elastic.co/downloads/elasticsearch).
 
 To download on debian, use the following command,
 ```
