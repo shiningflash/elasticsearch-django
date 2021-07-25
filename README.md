@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="https://cdn-media-1.freecodecamp.org/images/1*ojvTsI-Asv1IIjdm61RzKw.jpeg" width="400" title="elastic-search-django">
   <h1> ElasticSearch with Django </h1>
+  <img src="https://cdn-media-1.freecodecamp.org/images/1*ojvTsI-Asv1IIjdm61RzKw.jpeg" width="400" title="elastic-search-django">
 </div>
 
 Sample django project using elastic search. This is quite simple but more detailed. I hope it will be super helpful for you if you are a beginner at elastic search.
@@ -113,3 +113,11 @@ I hope you're familiar with this command.
 
 Now, your django application is also up and running. And you're fully ready, yayy!!
 
+---
+
+# Work In Progress ...
+
+
+### Disclaimer
+
+This is my first project in ElasticSearch. So, there are lots of things to improve. Feel free to create issues for improvement. Thanks in advance.
