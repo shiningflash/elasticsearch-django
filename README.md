@@ -1,7 +1,7 @@
-<p align="center">
+<div align="center">
   <h1> ElasticSearch with Django </h1>
   <img src="https://cdn-media-1.freecodecamp.org/images/1*ojvTsI-Asv1IIjdm61RzKw.jpeg" width="350" title="elastic-search-django">
-</p>
+</div>
 
 Sample django project using elastic search. This is quite simple but more detailed. I hope it will be super helpful for you if you are a beginner at elastic search.
 
@@ -30,7 +30,7 @@ OpenJDK Runtime Environment (build 11.0.11+9-Ubuntu-0ubuntu2.18.04)
 OpenJDK 64-Bit Server VM (build 11.0.11+9-Ubuntu-0ubuntu2.18.04, mixed mode, sharing)
 ```
 
-After getting java installed, (download)[https://www.elastic.co/downloads/elasticsearch] **elasticsearch** (from here)[https://www.elastic.co/downloads/elasticsearch].
+After getting java installed, [download[(https://www.elastic.co/downloads/elasticsearch) **elasticsearch** [from here](https://www.elastic.co/downloads/elasticsearch).
 
 To download on debian, use the following command,
 ```
@@ -41,7 +41,7 @@ $ wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key a
 $ sudo sh -c 'echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" > /etc/apt/sources.list.d/elastic-7.x.list'
 ```
 
-If you fail to download by using command line, just download `.deb` file (from here)[https://www.elastic.co/downloads/elasticsearch] and install that using `ubuntu software`.
+If you fail to download by using command line, just download `.deb` file [from here](https://www.elastic.co/downloads/elasticsearch) and install that using `ubuntu software`.
 
 When the download is successfully completed, install elastic search on debian, use the following command,
 ```
@@ -53,14 +53,9 @@ $ sudo apt install elasticsearch
 $ sudo systemctl enable elasticsearch.service --now
 ```
 
-To verify elastic search is running,
-```
-$ curl -X GET "localhost:9200/"
-# or
-$ curl http://localhost:9200/
-```
+To verify elastic search is running, use `$ curl -X GET "localhost:9200/"` or `$ curl http://localhost:9200/`.
 
-Or, just open your browser and type `http://localhost:9200/`.
+Or, just open your browser and type [http://localhost:9200/](http://localhost:9200/).
 
 Output should be something like this:
 ```
@@ -116,5 +111,5 @@ $ python3 manage.py startapp user
 
 I hope you're familiar with this command.
 
-Now, your django application is also up and running.
+Now, your django application is also up and running. And you're fully ready, yayy!!
 
