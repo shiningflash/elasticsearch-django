@@ -1,7 +1,7 @@
 <div align="center">
+  <img src="https://cdn-media-1.freecodecamp.org/images/1*ojvTsI-Asv1IIjdm61RzKw.jpeg" width="400" title="elastic-search-django">
   <h1> ElasticSearch with Django </h1>
-  <img src="https://cdn-media-1.freecodecamp.org/images/1*ojvTsI-Asv1IIjdm61RzKw.jpeg" width="350" title="elastic-search-django">
-</div>
+<br></div>
 
 Sample django project using elastic search. This is quite simple but more detailed. I hope it will be super helpful for you if you are a beginner at elastic search.
 
@@ -11,9 +11,9 @@ Elasticsearch is a distributed, free and open search and analytics engine for al
 
 **Django** is a Python-based free and open-source web framework.
 
-## Pre-requisite
+## 1 | Pre-requisite
 
-### download and install elasticsearch
+### 1.1 | download and install elasticsearch
 
 Elasticsearch is a Java application, so the first step is to [install Java](https://www.oracle.com/java/technologies/javase-downloads.html). 
 
@@ -82,7 +82,7 @@ Output should be something like this:
 
 Great!! So, now I hope you are successfully installed with both java and elastic search on your machine. Now, let's dig deeper...
 
-### install django
+### 1.2 | install django
 
 We're using django here. I hope django is already installed on your machine. If not, then use `$ pip3 install Django` to install django. Make sure that you're installed with `Python` and `pip3` already. You can install python and pip3 using following commands,
 ```
@@ -96,7 +96,7 @@ To verify django installation, use `$ django-admin –version`.
 
 Alright! Now, you're all set.
 
-### create and set-up django application
+### 1.3 | create and set-up django application
 
 ```
 $ django-admin startproject elastic
